@@ -117,14 +117,12 @@
 
         }
 
-        $(window).load(function(){
+        $(window).on('load', function() {
+            centerLoader();
+            $(window).resize(function(){
                 centerLoader();
-              $(window).resize(function(){
-                centerLoader();
-              });
+            });
         });
-
-
 }(jQuery));
 
 
